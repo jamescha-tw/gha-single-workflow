@@ -26,10 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: production
-      # This requires manual approval in the GitHub UI
-      # You can also use wait_timer if you want a delay instead
-      deployment_branch_policy:
-        protected_branches: true
     steps:
       - name: Deploy to Prod
         run: echo "Deploying to Prod..."
